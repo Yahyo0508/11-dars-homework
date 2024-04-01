@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h1 class="text-2xl font-semibold mb-4 text-center">Task List</h1>
+        <div class="flex mb-4">
+            <input type="text" id="taskInput" class="flex-1 px-4 py-2 border rounded-l-md" placeholder="Введите новую задачу">
+            <button onclick="addTask()" class="bg-blue-500 text-white px-4 rounded-r-md">Добавить</button>
+        </div>
+        <ul id="taskList" class="list-disc pl-8">
+        </ul>
+        <button onclick="saveTasks()" class="bg-green-500 text-white px-4 py-2 rounded-md mt-4 block mx-auto">Сохранить в файл</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
